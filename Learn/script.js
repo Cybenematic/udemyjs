@@ -23,7 +23,7 @@
 
 'use strict';
 
-const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели", "");
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели", "");
 
 
 const personalMovieDB = {
@@ -51,16 +51,12 @@ else {
 for (let i=0; i < 2; i++) {
     const a = prompt("Один из последних просмотренных фильмов?", ""),
           b = prompt("На сколько оцените его?", "");
-            
-            
         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
             personalMovieDB.movies[a] = b;
         } else {
-            
-            console.log('error');
+                       console.log('error');
             i--;
-        }
-    
-}
+        } 
+   }
 
 
