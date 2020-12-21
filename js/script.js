@@ -24,3 +24,15 @@ const movieDB = {
     ]
 };
 
+const promo__adv = document.querySelectorAll('.promo__adv');
+
+for (let i = 0; i < promo__adv.length; i++) {
+    promo__adv[i].remove();
+};
+
+const promo__genre = document.querySelectorAll('.promo__genre');
+promo__genre[0].innerHTML = 'ДРАМА';
+
+const promo__bg = document.querySelectorAll('.promo__bg');
+console.log(promo__bg);
+
