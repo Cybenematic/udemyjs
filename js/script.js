@@ -36,3 +36,5 @@ promo__genre[0].innerHTML = 'ДРАМА';
 const promo__bg = document.querySelectorAll('.promo__bg');
 console.log(promo__bg);
 
+
+
